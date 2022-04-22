@@ -17,6 +17,9 @@ import javafx.stage.Stage;
 
 public class Scene5halfController {
 
+	@FXML
+	private Button BackButton;
+
     @FXML
     private AnchorPane CostPane;
 
@@ -47,6 +50,16 @@ public class Scene5halfController {
     @FXML
     void NextButtonClicked(ActionEvent event) throws IOException {
     	URL url = new File("src/ParkingModel6.fxml").toURI().toURL();
+   	 	CostPane = FXMLLoader.load(url);// pane you are GOING TO
+        Scene scene = new Scene(CostPane);// pane you are GOING TO show
+        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();// pane you are ON
+        window.setScene(scene);
+        window.show();
+
+    }
+    @FXML
+    void BackButtonClicked(ActionEvent event) throws IOException {
+    	URL url = new File("src/Estimates5.fxml").toURI().toURL();
    	 	CostPane = FXMLLoader.load(url);// pane you are GOING TO
         Scene scene = new Scene(CostPane);// pane you are GOING TO show
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();// pane you are ON
