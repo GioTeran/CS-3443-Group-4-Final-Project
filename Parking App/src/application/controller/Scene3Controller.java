@@ -19,6 +19,9 @@ import javafx.stage.Stage;
 
 public class Scene3Controller {
 
+	@FXML
+	private Button BackButton;
+
     @FXML
     private Button DaySurfaceButton;
 
@@ -103,6 +106,15 @@ public class Scene3Controller {
         window.setScene(scene);
         window.show();
 
+    }
+    @FXML
+    void BackButtonClicked(ActionEvent event) throws IOException {
+    	URL url = new File("src/Status2.fxml").toURI().toURL();
+   	 	SelectorPane = FXMLLoader.load(url);// pane you are GOING TO
+        Scene scene = new Scene(SelectorPane);// pane you are GOING TO show
+        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();// pane you are ON
+        window.setScene(scene);
+        window.show();
     }
 
 }

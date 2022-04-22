@@ -23,7 +23,9 @@ import javafx.stage.Stage;
 public class Scene4Controller {
 	
 	
-
+	@FXML
+	private Button BackButton;
+	
     @FXML
     private CheckBox Fr24hrBox;
 
@@ -126,6 +128,16 @@ public class Scene4Controller {
         window.setScene(scene);
         window.show();
 
+    }
+    
+    @FXML
+    void BackButtonClicked(ActionEvent event) throws IOException {
+    	URL url = new File("src/PermitSelection3.fxml").toURI().toURL();
+   	 	TimePane = FXMLLoader.load(url);// pane you are GOING TO
+        Scene scene = new Scene(TimePane);// pane you are GOING TO show
+        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();// pane you are ON
+        window.setScene(scene);
+        window.show();
     }
 
 }
