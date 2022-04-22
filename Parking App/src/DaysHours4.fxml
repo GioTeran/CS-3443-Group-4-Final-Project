@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -7,8 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane fx:id="TimePane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.controller.Scene4Controller">
+<AnchorPane fx:id="TimePane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.Scene4Controller">
    <children>
       <Pane prefHeight="600.0" prefWidth="800.0">
          <children>
@@ -42,7 +42,7 @@
                   <Font size="33.0" />
                </font>
             </Text>
-            <CheckBox fx:id="SuCheckBox" layoutX="135.0" layoutY="104.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="26.0">
+            <CheckBox layoutX="135.0" layoutY="104.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="26.0">
                <font>
                   <Font size="20.0" />
                </font>
@@ -82,12 +82,12 @@
                   <Font size="20.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="SaCheckBox" layoutX="133.0" layoutY="508.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="26.0">
+            <CheckBox layoutX="133.0" layoutY="508.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="26.0">
                <font>
                   <Font size="20.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="Su24hrBox" layoutX="215.0" layoutY="103.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="88.0" text="24 hr">
+            <CheckBox layoutX="215.0" layoutY="103.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="88.0" text="24 hr">
                <font>
                   <Font size="20.0" />
                </font>
@@ -117,25 +117,25 @@
                   <Font size="20.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="Sa24hrBox" layoutX="215.0" layoutY="508.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="88.0" text="24 hr">
+            <CheckBox layoutX="215.0" layoutY="508.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="88.0" text="24 hr">
                <font>
                   <Font size="20.0" />
                </font>
             </CheckBox>
-            <TextField fx:id="SuStartField" layoutX="366.0" layoutY="113.0" />
+            <TextField layoutX="366.0" layoutY="113.0" />
             <TextField fx:id="MoStartField" layoutX="366.0" layoutY="180.0" />
             <TextField fx:id="TuStartField" layoutX="366.0" layoutY="254.0" />
             <TextField fx:id="WeStartField" layoutX="366.0" layoutY="334.0" />
             <TextField fx:id="ThStartField" layoutX="366.0" layoutY="399.0" />
             <TextField fx:id="FrStartField" layoutX="366.0" layoutY="456.0" />
-            <TextField fx:id="SaStartField" layoutX="366.0" layoutY="516.0" />
-            <TextField fx:id="SuEndField" layoutX="578.0" layoutY="113.0" />
+            <TextField layoutX="366.0" layoutY="516.0" />
+            <TextField layoutX="578.0" layoutY="113.0" />
             <TextField fx:id="MoEndField" layoutX="578.0" layoutY="179.0" />
             <TextField fx:id="TuEndField" layoutX="578.0" layoutY="254.0" />
             <TextField fx:id="WeEndField" layoutX="578.0" layoutY="333.0" />
             <TextField fx:id="ThEndField" layoutX="578.0" layoutY="398.0" />
             <TextField fx:id="FrEndField" layoutX="578.0" layoutY="458.0" />
-            <TextField fx:id="SaEndField" layoutX="578.0" layoutY="515.0" />
+            <TextField layoutX="578.0" layoutY="515.0" />
             <Text layoutX="416.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start">
                <font>
                   <Font size="17.0" />
@@ -146,6 +146,7 @@
                   <Font size="17.0" />
                </font>
             </Text>
+            <Button fx:id="Submit" layoutX="701.0" layoutY="552.0" mnemonicParsing="false" onAction="#SubmitButtonClicked" text="Submit" />
          </children>
       </Pane>
    </children>

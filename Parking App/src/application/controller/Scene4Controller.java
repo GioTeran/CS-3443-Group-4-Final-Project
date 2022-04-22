@@ -3,10 +3,20 @@
  */
 package application.controller;
 
+import javafx.scene.control.Button;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 public class Scene4Controller {
 
@@ -96,5 +106,19 @@ public class Scene4Controller {
 
     @FXML
     private TextField WeStartField;
+    
+    @FXML
+    private Button Submit;
+    
+    @FXML
+    void SubmitButtonClicked(ActionEvent event) throws IOException {
+    	URL url = new File("src/Estimates5.fxml").toURI().toURL();
+   	 	TimePane = FXMLLoader.load(url);// pane you are GOING TO
+        Scene scene = new Scene(TimePane);// pane you are GOING TO show
+        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();// pane you are ON
+        window.setScene(scene);
+        window.show();
+
+    }
 
 }
