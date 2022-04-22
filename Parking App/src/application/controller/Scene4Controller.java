@@ -18,7 +18,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+
+
 public class Scene4Controller {
+	
+	
 
     @FXML
     private CheckBox Fr24hrBox;
@@ -109,6 +113,9 @@ public class Scene4Controller {
     
     @FXML
     private Button Submit;
+    
+    
+    
     
     @FXML
     void SubmitButtonClicked(ActionEvent event) throws IOException {

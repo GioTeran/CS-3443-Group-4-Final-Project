@@ -1,4 +1,4 @@
-// controller for cost5.5.fxml
+// controller for cost5.5.fxml scene
 package application.controller;
 
 import java.io.File;
