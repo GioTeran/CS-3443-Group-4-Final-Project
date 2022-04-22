@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="CostPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.Scene5halfController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Text layoutX="229.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Permit Cost" textAlignment="CENTER" wrappingWidth="339.1004638671875">
+               <font>
+                  <Font size="51.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="PermitCost" layoutX="82.0" layoutY="107.0" prefHeight="39.0" prefWidth="246.0" />
+            <TextArea fx:id="OtherPermits1" layoutX="83.0" layoutY="340.0" prefHeight="39.0" prefWidth="246.0" />
+            <TextArea fx:id="OtherPermits2" layoutX="83.0" layoutY="411.0" prefHeight="39.0" prefWidth="246.0" />
+            <TextArea fx:id="OtherPermits3" layoutX="83.0" layoutY="481.0" prefHeight="39.0" prefWidth="246.0" />
+            <TextArea fx:id="OtherPermits4" layoutX="434.0" layoutY="340.0" prefHeight="39.0" prefWidth="246.0" />
+            <TextArea fx:id="OtherPermits5" layoutX="434.0" layoutY="411.0" prefHeight="39.0" prefWidth="246.0" />
+            <TextArea fx:id="OtherPermits6" layoutX="435.0" layoutY="481.0" prefHeight="39.0" prefWidth="246.0" />
+            <Text layoutX="89.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Other Permits in your status:">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Button fx:id="NextButton" layoutX="685.0" layoutY="540.0" mnemonicParsing="false" onAction="#NextButtonClicked" text="Button" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
