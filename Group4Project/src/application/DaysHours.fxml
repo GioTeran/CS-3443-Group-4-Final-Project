@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="TimePane" style="-fx-background-color: #0C2340;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.DaysHoursController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Text fill="WHITE" layoutX="189.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expected Parking Time">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="73.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Su">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="70.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mo">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="72.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tu">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="72.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="74.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Th">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="SuCheckBox" layoutX="135.0" layoutY="104.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="26.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="MoCheckBox" layoutX="134.0" layoutY="172.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="26.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="TuCheckBox" layoutX="134.0" layoutY="249.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="26.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="WeCheckBox" layoutX="134.0" layoutY="326.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="26.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="ThCheckBox" layoutX="135.0" layoutY="389.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="26.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <Text fill="WHITE" layoutX="73.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fr">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="72.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sa">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="FrCheckBox" layoutX="134.0" layoutY="449.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="26.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="SaCheckBox" layoutX="133.0" layoutY="508.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="26.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Su24hrBox" layoutX="215.0" layoutY="103.0" mnemonicParsing="false" onAction="#SunChecked" prefHeight="42.0" prefWidth="88.0" text="24 hr" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Mo24hrBox" layoutX="215.0" layoutY="171.0" mnemonicParsing="false" onAction="#MonChecked" prefHeight="42.0" prefWidth="88.0" text="24 hr" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Tu24hrBox" layoutX="215.0" layoutY="248.0" mnemonicParsing="false" onAction="#TueChecked" prefHeight="42.0" prefWidth="88.0" text="24 hr" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="We24hrBox" layoutX="215.0" layoutY="326.0" mnemonicParsing="false" onAction="#WedChecked" prefHeight="42.0" prefWidth="88.0" text="24 hr" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Th24Box" layoutX="215.0" layoutY="391.0" mnemonicParsing="false" onAction="#ThrChecked" prefHeight="42.0" prefWidth="88.0" text="24 hr" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Fr24hrBox" layoutX="215.0" layoutY="448.0" mnemonicParsing="false" onAction="#FriChecked" prefHeight="42.0" prefWidth="88.0" text="24 hr" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Sa24hrBox" layoutX="215.0" layoutY="508.0" mnemonicParsing="false" onAction="#SatChecked" prefHeight="42.0" prefWidth="88.0" text="24 hr" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <TextField fx:id="SuStartField" layoutX="366.0" layoutY="113.0" />
+            <TextField fx:id="MoStartField" layoutX="366.0" layoutY="180.0" />
+            <TextField fx:id="TuStartField" layoutX="366.0" layoutY="254.0" />
+            <TextField fx:id="WeStartField" layoutX="366.0" layoutY="334.0" />
+            <TextField fx:id="ThStartField" layoutX="366.0" layoutY="399.0" />
+            <TextField fx:id="FrStartField" layoutX="366.0" layoutY="456.0" />
+            <TextField fx:id="SaStartField" layoutX="366.0" layoutY="516.0" />
+            <TextField fx:id="SuEndField" layoutX="578.0" layoutY="113.0" />
+            <TextField fx:id="MoEndField" layoutX="578.0" layoutY="179.0" />
+            <TextField fx:id="TuEndField" layoutX="578.0" layoutY="254.0" />
+            <TextField fx:id="WeEndField" layoutX="578.0" layoutY="333.0" />
+            <TextField fx:id="ThEndField" layoutX="578.0" layoutY="398.0" />
+            <TextField fx:id="FrEndField" layoutX="578.0" layoutY="458.0" />
+            <TextField fx:id="SaEndField" layoutX="578.0" layoutY="515.0" />
+            <Text fill="WHITE" layoutX="416.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Button fx:id="BackButton" layoutX="-10.0" layoutY="524.0" mnemonicParsing="false" onAction="#BackButtonClicked" prefHeight="37.0" prefWidth="42.0" style="-fx-background-color: #0C2340;">
+               <graphic>
+                  <ImageView fitHeight="62.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Data/BackArrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="WHITE" layoutX="641.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Button fx:id="Submit" layoutX="706.0" layoutY="551.0" mnemonicParsing="false" onAction="#SubmitButtonClicked" prefHeight="36.0" prefWidth="75.0" style="-fx-background-color: #F15A22;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
