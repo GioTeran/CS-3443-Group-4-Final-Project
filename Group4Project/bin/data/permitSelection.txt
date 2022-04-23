@@ -34,3 +34,4 @@ surface, day
 surface, hourly
 surface, hourly
 surface, hourly
+garage, hourly
