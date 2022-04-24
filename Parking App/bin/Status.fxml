@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane style="-fx-background-color: #0C2340;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.StatusController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Text fill="WHITE" layoutX="290.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
+               <font>
+                  <Font size="73.0" />
+               </font>
+            </Text>
+            <Button fx:id="StudentButton" layoutX="52.0" layoutY="220.0" mnemonicParsing="false" onAction="#StudentButtonClicked" prefHeight="118.0" prefWidth="203.0" style="-fx-background-color: #0C2340;">
+               <graphic>
+                  <ImageView fitHeight="151.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Data/StudentLogo.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="StaffButton" layoutX="319.0" layoutY="194.0" mnemonicParsing="false" onAction="#StaffButtonClicked" prefHeight="158.0" prefWidth="202.0" style="-fx-background-color: #0C2340;">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="148.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Data/StaffLogo.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="GuestButton" layoutX="553.0" layoutY="194.0" mnemonicParsing="false" onAction="#GuestButtonClicked" prefHeight="71.0" prefWidth="185.0" style="-fx-background-color: #0C2340;">
+               <graphic>
+                  <ImageView fitHeight="176.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Data/GuestLogo.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="StatusBackButton" layoutX="20.0" layoutY="519.0" mnemonicParsing="false" onAction="#BackButtonClicked" prefHeight="39.0" prefWidth="83.0" style="-fx-background-color: #0C2340;" text="Back">
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Data/BackArrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Text fill="WHITE" layoutX="74.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose which status fits you best." wrappingWidth="570.0243225097656">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="135.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="391.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="618.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guest">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
