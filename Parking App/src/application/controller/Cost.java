@@ -49,6 +49,9 @@ public class Cost implements Initializable{
 
     @FXML
     private TextArea PermitCost;
+	
+    @FXML
+    private ListView<String> list;
 
     @FXML
     void NextButtonClicked(ActionEvent event) throws IOException {
@@ -74,7 +77,7 @@ public class Cost implements Initializable{
     Estimate estimate = new Estimate();
     public void initialize(URL arg0, ResourceBundle arg1){
     	try {
-			PermitCost.setText(estimate.finalEstimate());
+			estimate.finalEstimate(PermitCost, list);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
