@@ -63,13 +63,12 @@ public class Estimate {
 		
 		
 		if(status.equals("student") && permPeriod.equals("year")) {
-			System.out.println("IM IN");
 			if(permType.equals("surface") && (earliest >= 16.5)) {
-				textfield.setText("The most cost efficient permit for your schedule and prefrences is the Twilight Permit. It costs $82 per academic year and allows parking in Unmarked Commuter Student spaces from 4:30 pm – 6:00 am weekdays & all day weekends.");
+				textfield.setText("The most cost efficient permit for your schedule and prefrences is the Twilight Permit. It costs $82 per academic year and allows parking in Unmarked Commuter Student spaces from 4:30 pm â€“ 6:00 am weekdays & all day weekends.");
 				return;
 			}
 			else if(permType.equals("surface") && (earliest < 16.5)) {
-				textfield.setText("The most cost efficient permit for your schedule and prefrences is the Commuter Student Permit. It costs $170 per academic year and allows parking in Unmarked Commuter Student spaces anytime and Employee B spaces from 4:30 pm – 6:00 am weekdays & all day weekends.");
+				textfield.setText("The most cost efficient permit for your schedule and prefrences is the Commuter Student Permit. It costs $170 per academic year and allows parking in Unmarked Commuter Student spaces anytime and Employee B spaces from 4:30 pm â€“ 6:00 am weekdays & all day weekends.");
 				return;
 			}
 		}
@@ -115,7 +114,7 @@ public class Estimate {
 			return;
 		}
 		else if(status.equals("staff") && permPeriod.equals("yearly") && permType.equals("surface")) {
-			textfield.setText("The most cost efficient parking for your schedule and prefrences is to get the Employee B parking. It costs $203 and allows parking in Employee B spaces, Unmarked Commuter Student spaces, and Employee A spaces spaces from 4:30 pm – 6:00 am weekdays & all day weekends");
+			textfield.setText("The most cost efficient parking for your schedule and prefrences is to get the Employee B parking. It costs $203 and allows parking in Employee B spaces, Unmarked Commuter Student spaces, and Employee A spaces spaces from 4:30 pm â€“ 6:00 am weekdays & all day weekends");
 			return;
 		}
 		else if(status.equals("staff") && permPeriod.equals("yearly") && permType.equals("garage")) {
