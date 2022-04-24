@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="parkingPane" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #0C2340;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LotController">
+   <children>
+      <Label layoutX="315.0" text="Model Lot" textFill="WHITE" AnchorPane.bottomAnchor="747.0" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="315.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="312.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" scaleX="3.25" scaleY="9.0" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="350.0">
+         <image>
+            <Image url="@../Data/LotModel.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="returnBtn" layoutX="14.0" layoutY="722.0" mnemonicParsing="false" onAction="#returnToMain" prefHeight="66.0" prefWidth="239.0" style="-fx-background-color: #F15A22;" text="Main Menu" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="547.0" AnchorPane.topAnchor="722.0">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="673.0" layoutY="722.0" mnemonicParsing="false" onAction="#closeApp" style="-fx-background-color: #F15A22;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="36.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
