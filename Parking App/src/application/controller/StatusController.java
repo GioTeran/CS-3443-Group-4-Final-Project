@@ -36,6 +36,12 @@ public class StatusController {
 
     StatusModel status = new StatusModel();
     
+    /*
+     * Name: GuestButtonClicked
+     * Description: switches to the permit selection scene
+   	 * Parameters: event (ActionEvent)
+   	 * returns: nothing
+     */
     @FXML
     void GuestButtonClicked(ActionEvent event) throws IOException {
     	status.saveStatus("guest");
@@ -47,6 +53,12 @@ public class StatusController {
         window.show();
     }
 
+    /*
+     * Name: StaffButtonClicked
+     * Description: switches to the permit selection scene
+   	 * Parameters: event (ActionEvent)
+   	 * returns: nothing
+     */
     @FXML
     void StaffButtonClicked(ActionEvent event) throws IOException {
     	status.saveStatus("staff");
@@ -58,6 +70,12 @@ public class StatusController {
         window.show();
     }
 
+    /*
+     * Name: StatusButtonClicked
+     * Description: switches to the main scene
+   	 * Parameters: event (ActionEvent)
+   	 * returns: nothing
+     */
     @FXML
     void StatusBackButtonClicked(ActionEvent event) throws IOException {
     	URL url = new File("src/Main.fxml").toURI().toURL();
@@ -68,6 +86,12 @@ public class StatusController {
         window.show();
     }
 
+    /*
+     * Name: StudentButtonClicked
+     * Description: switches to the permit selection scene
+   	 * Parameters: event (ActionEvent)
+   	 * returns: nothing
+     */
     @FXML
     void StudentButtonClicked(ActionEvent event) throws IOException {
     	status.saveStatus("student");
