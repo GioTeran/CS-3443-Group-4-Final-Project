@@ -1,3 +1,4 @@
+//model for the permit selection scene
 package application.model;
 
 import java.io.File;
@@ -7,6 +8,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class SelectionModel {
+	/*
+        * Name: saveSelection
+        * Description: saves the user's permit preferences to permitSelection.txt
+   	* Parameters: type (String), period (String)
+   	* returns: nothing
+        */
 	public void saveSelection(String type, String period) throws IOException {
 		File file = new File("src/data/permitSelection.txt");
 		FileWriter myWriter = new FileWriter(file , true);
