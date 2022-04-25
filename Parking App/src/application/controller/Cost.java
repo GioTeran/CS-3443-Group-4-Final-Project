@@ -53,7 +53,13 @@ public class Cost implements Initializable{
 	
     @FXML
     private ListView<String> list;
-
+    
+    /*
+	* Method Name: NextButtonClicked
+	* Description: switches to the parking lot scene 
+	* Parameters: event(Action Event)
+	* Returns: none
+    */
     @FXML
     void NextButtonClicked(ActionEvent event) throws IOException {
     	URL url = new File("src/ParkingLot.fxml").toURI().toURL();
@@ -64,6 +70,13 @@ public class Cost implements Initializable{
         window.show();
 
     }
+
+    /*
+	* Method Name: BackButtonClicked
+	* Description: switches to Estimate scene 
+	* Parameters: event(Action Event)
+	* Returns: none
+    */
     @FXML
     void BackButtonClicked(ActionEvent event) throws IOException {
     	URL url = new File("src/Estimations.fxml").toURI().toURL();
@@ -76,6 +89,12 @@ public class Cost implements Initializable{
     }
 
     Estimate estimate = new Estimate();
+    /*
+	* Method Name: initialize
+	* Description: displays permits to text fields and list view
+	* Parameters: arg0(URL), arg1 (ResourceBundle)
+	* Returns: none
+    */
     public void initialize(URL arg0, ResourceBundle arg1){
     	try {
 			estimate.finalEstimate(PermitCost, list);
