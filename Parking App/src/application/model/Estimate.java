@@ -61,18 +61,18 @@ public class Estimate {
 			days.add(split1[3+i]);
 		}
 		
-		System.out.println(status+" "+permPeriod+ " " +permType+"\n" + (status.equals("student") && permPeriod.equals("year") && permType.equals("garage")));
+		
 		
 		if(status.equals("student") && permPeriod.equals("year")) {
 			if(permType.equals("surface") && (earliest >= 16.5)) {
-				textfield.setText("The most cost efficient permit for your schedule and prefrences is the Twilight Permit. It costs $82 per academic year and allows parking in Unmarked Commuter Student spaces from 4:30 pm – 6:00 am weekdays & all day weekends.");
-				list.getItems().add("Commuter Student - $170\nAllows parking in Unmarked Commuter Student spaces anytime and Employee B spaces from 4:30 pm – 6:00 am\n"
+				textfield.setText("The most cost efficient permit for your schedule and prefrences is the Twilight Permit. It costs $82 per academic year and allows parking in Unmarked Commuter Student spaces from 4:30 pm â€“ 6:00 am weekdays & all day weekends.");
+				list.getItems().add("Commuter Student - $170\nAllows parking in Unmarked Commuter Student spaces anytime and Employee B spaces from 4:30 pm â€“ 6:00 am\n"
 				+ "on weekdays & all day weekends.");
 				return;
 			}
 			else if(permType.equals("surface") && (earliest < 16.5)) {
-				textfield.setText("The most cost efficient permit for your schedule and prefrences is the Commuter Student Permit. It costs $170 per academic year and allows parking in Unmarked Commuter Student spaces anytime and Employee B spaces from 4:30 pm – 6:00 am weekdays & all day weekends.");
-				list.getItems().add("Twilight - $82\nAllows parking in Unmarked Commuter Student spaces from 4:30 pm – 6:00 am on weekdays & all day weekends.");
+				textfield.setText("The most cost efficient permit for your schedule and prefrences is the Commuter Student Permit. It costs $170 per academic year and allows parking in Unmarked Commuter Student spaces anytime and Employee B spaces from 4:30 pm â€“ 6:00 am weekdays & all day weekends.");
+				list.getItems().add("Twilight - $82\nAllows parking in Unmarked Commuter Student spaces from 4:30 pm â€“ 6:00 am on weekdays & all day weekends.");
 				return;
 			}
 		}
@@ -97,18 +97,18 @@ public class Estimate {
 			if(earliest >= 16.5) {
 				textfield.setText("The most cost efficient parking for your schedule and prefrences is to get a Night Only Permit for either the Xiemnes, Baurle, Tobin, or Downtown Campus garages. Each costs only $264 per academic year.");
 				list.getItems().add("Student Ximenes Avenue Garage (XAG) - $846\nAllows parking in the Ximenes Avenue Garage and Downtown Campus Garage anytime,\n"
-						+ "Unmarked Commuter Student spaces anytime, and Employee B spaces from 4:30 pm – 6:00 am weekdays & all day weekends.");
+						+ "Unmarked Commuter Student spaces anytime, and Employee B spaces from 4:30 pm â€“ 6:00 am weekdays & all day weekends.");
 				list.getItems().add("Student Tobin Avenue Garage (TAG) - $846\nAllows parking in the Tobin Avenue Garage and Downtown Campus Garage anytime,\n"
-						+ "Unmarked Commuter Student spaces anytime, and Employee B spaces from 4:30 pm – 6:00 am weekdays & all day weekends.");
+						+ "Unmarked Commuter Student spaces anytime, and Employee B spaces from 4:30 pm â€“ 6:00 am weekdays & all day weekends.");
 				list.getItems().add("Student Bauerle Road Garage (BRG) - $846\nAllows parking in the Bauerlr Road Garage and Downtown Campus Garage anytime,\n"
-						+ "Unmarked Commuter Student spaces anytime, and Employee B spaces from 4:30 pm – 6:00 am weekdays & all day weekends.");
+						+ "Unmarked Commuter Student spaces anytime, and Employee B spaces from 4:30 pm â€“ 6:00 am weekdays & all day weekends.");
 				return;
 			}
 			else {
 				textfield.setText("The most cost efficient parking for your schedule and prefrences is to get a Garage Permit for either the Xiemnes, Baurle, Tobin, or Downtown Campus garages. Each costs only $864 per academic year.");
-				list.getItems().add("Ximenes Avenue Garage (XAG) – Night Only - $264\nAllows parking in the Ximenes Avenue Garage and Downtown Campus Garage from 4:30 pm – 6:00 am weekdays & all day weekends.");
-				list.getItems().add("Tobin Avenue Garage (TAG) – Night Only – Night Only - $264\nAllows parking in the Tobin Avenue Garage and Downtown Campus Garage from 4:30 pm – 6:00 am weekdays & all day weekends.");
-				list.getItems().add("Bauerle Road Garage (BRG) – Night Only – Night Only - $264\nAllows parking in the Bauerle Road Garage and Downtown Campus Garage from 4:30 pm – 6:00 am weekdays & all day weekends.");
+				list.getItems().add("Ximenes Avenue Garage (XAG) â€“ Night Only - $264\nAllows parking in the Ximenes Avenue Garage and Downtown Campus Garage from 4:30 pm â€“ 6:00 am weekdays & all day weekends.");
+				list.getItems().add("Tobin Avenue Garage (TAG) â€“ Night Only â€“ Night Only - $264\nAllows parking in the Tobin Avenue Garage and Downtown Campus Garage from 4:30 pm â€“ 6:00 am weekdays & all day weekends.");
+				list.getItems().add("Bauerle Road Garage (BRG) â€“ Night Only â€“ Night Only - $264\nAllows parking in the Bauerle Road Garage and Downtown Campus Garage from 4:30 pm â€“ 6:00 am weekdays & all day weekends.");
 				return;
 			}
 		}
@@ -128,7 +128,7 @@ public class Estimate {
 			return;
 		}
 		if(status.equals("staff") && permPeriod.equals("year") && permType.equals("surface")) {
-			textfield.setText("The most cost efficient parking for your schedule and prefrences is to get the Employee B parking. It costs $203 and allows parking in Employee B spaces, Unmarked Commuter Student spaces, and Employee A spaces spaces from 4:30 pm – 6:00 am weekdays & all day weekends");
+			textfield.setText("The most cost efficient parking for your schedule and prefrences is to get the Employee B parking. It costs $203 and allows parking in Employee B spaces, Unmarked Commuter Student spaces, and Employee A spaces spaces from 4:30 pm â€“ 6:00 am weekdays & all day weekends");
 			list.getItems().add("Employee A - $378\nAllows parking in Employee A and Employee B spaces and Unmarked Commuter Student spaces.");
 			list.getItems().add("Employee Reserved - $723\nAllows parking in Reserved spaces,Employee A, Employee B, and unmarked Commuter Student spaces.");
 			return;
@@ -152,17 +152,17 @@ public class Estimate {
 			}
 			else {
 				textfield.setText("The most cost efficient parking for your schedule and prefrences is to get an Employee Garage Permit. It costs $858 and are available for the Ximenes, Baurle, and Tobin garages.");
-				list.getItems().add("Employee Ximenes Avenue Garage (XAG) – Night Only - $268\nAllows parinking in Ximenes Avenue Garage and Downtown Campus Garage from 4:30pm-6:00am weekdays and all day weekends.");
-				list.getItems().add("Employee Tobin Avenue Garage (XAG) – Night Only - $268\nAllows parinking in Tobin Avenue Garage and Downtown Campus Garage from 4:30pm-6:00am weekdays and all day weekends.");
-				list.getItems().add("Employee Ximenes Avenue Garage (XAG) – Night Only - $268\nAllows parinking in Bauerle Road Garage and Downtown Campus Garage from 4:30pm-6:00am weekdays and all day weekends.");
+				list.getItems().add("Employee Ximenes Avenue Garage (XAG) â€“ Night Only - $268\nAllows parinking in Ximenes Avenue Garage and Downtown Campus Garage from 4:30pm-6:00am weekdays and all day weekends.");
+				list.getItems().add("Employee Tobin Avenue Garage (XAG) â€“ Night Only - $268\nAllows parinking in Tobin Avenue Garage and Downtown Campus Garage from 4:30pm-6:00am weekdays and all day weekends.");
+				list.getItems().add("Employee Ximenes Avenue Garage (XAG) â€“ Night Only - $268\nAllows parinking in Bauerle Road Garage and Downtown Campus Garage from 4:30pm-6:00am weekdays and all day weekends.");
 				return;
 			}
 		}
-		if(status.equals("guest") && (permType.equals("garage") || permType.equals("hourly"))) {
+		if(status.equals("guest") && (permType.equals("garage") || permPeriod.equals("hourly"))) {
 			textfield.setText("The most cost efficient parking for your schedule and prefrences is to park in either the Xiemnes, Baurle, Tobin, or Downtown Campus garages for only $2.50 per hour.");
 			return;
 		}
-		if(status.equals("guest") && permType.equals("day")) {
+		if(status.equals("guest") && permPeriod.equals("day")) {
 			textfield.setText("The most cost efficient permit for your schedule and prefrences is the Commuter Single-Use Daily Parking Permit. It cost $7 per each permit and allows parking in Unmarked Commuter Student spaces.");
 			return;
 		}
