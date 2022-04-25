@@ -45,6 +45,12 @@ public class SelectionMenuController {
     
     SelectionModel selection = new SelectionModel();
 
+    /*
+      * Name:DaySurfaceButtonClicked
+      * Description: switches to DaysHours scene
+      * Parameters: event (ActionEvent)
+      * returns: nothing
+     */
     @FXML
     void DaySurfaceButtonClicked(ActionEvent event) throws IOException {
     	selection.saveSelection("surface", "day");
@@ -56,7 +62,13 @@ public class SelectionMenuController {
         window.show();
 
     }
-
+	
+    /*
+     * Name: FullYearButtonClicked
+     * Description: switches to DaysHours scene
+     * Parameters: event (ActionEvent)
+     * returns: nothing
+     */
     @FXML
     void FullYearButtonClicked(ActionEvent event) throws IOException {
     	selection.saveSelection("garage", "year");
@@ -69,6 +81,12 @@ public class SelectionMenuController {
 
     }
 
+    /*
+     * Name: FullYearSurfaceButtonClicked
+     * Description: switches to DaysHours scene
+     * Parameters: event (ActionEvent)
+     * returns: nothing
+     */
     @FXML
     void FullYearSurfaceButtonClicked(ActionEvent event) throws IOException {
     	selection.saveSelection("surface", "year");
@@ -80,6 +98,12 @@ public class SelectionMenuController {
         window.show();
     }
 
+    /*
+     * Name: HourlyGarageButtonClicked
+     * Description: switches to DaysHours scene
+     * Parameters: event (ActionEvent)
+     * returns: nothing
+     */
     @FXML
     void HourlyGarageButtonClicked(ActionEvent event) throws IOException {
     	selection.saveSelection("garage", "hourly");
@@ -92,6 +116,12 @@ public class SelectionMenuController {
 
     }
 
+    /*
+     * Name: HourlySurfaceButtonClicked
+     * Description: switches to DaysHours scene
+     * Parameters: event (ActionEvent)
+     * returns: nothing
+     */
     @FXML
     void HourlySurfaceButtonClicked(ActionEvent event) throws IOException {
     	selection.saveSelection("surface", "hourly");
@@ -104,6 +134,12 @@ public class SelectionMenuController {
 
     }
 
+    /*
+     * Name: OneDayGarageButtonClicked
+     * Description: switches to DaysHours scene
+     * Parameters: event (ActionEvent)
+     * returns: nothing
+     */
     @FXML
     void OneDayGarageButtonClicked(ActionEvent event) throws IOException {
     	selection.saveSelection("garage", "day");
@@ -115,6 +151,13 @@ public class SelectionMenuController {
         window.show();
 
     }
+	
+    /*
+     * Name: BackButtonButtonClicked
+     * Description: switches to DaysHours scene
+     * Parameters: event (ActionEvent)
+     * returns: nothing
+     */	
     @FXML
     void BackButtonClicked(ActionEvent event) throws IOException {
     	URL url = new File("src/Status.fxml").toURI().toURL();
