@@ -22,6 +22,12 @@ public class MainController {
     @FXML
     private Button GetPermitButton;
 
+    /*
+   	* Method Name: GetPermitButtonClicked
+   	* Description: switches to Status scene
+   	* Parameters: event (ActionEvent)
+   	* Returns: none
+   	*/
     @FXML
     void GetPermitButtonClicked(ActionEvent event) throws IOException {
     	URL url = new File("src/Status.fxml").toURI().toURL();
