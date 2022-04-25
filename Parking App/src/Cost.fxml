@@ -23,7 +23,8 @@
                   <Font size="51.0" />
                </font>
             </Text>
-            <TextArea fx:id="PermitCost" layoutX="82.0" layoutY="107.0" prefHeight="125.0" prefWidth="610.0" />
+
+            <TextArea fx:id="PermitCost" layoutX="82.0" layoutY="107.0" prefHeight="153.0" prefWidth="616.0" />
             <Text fill="WHITE" layoutX="89.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Other Permits in your status:">
                <font>
                   <Font size="26.0" />
@@ -33,7 +34,7 @@
                <graphic>
                   <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Data/BackArrow.png" />
+                        <Image url="@../DataImg/BackArrow.png" />
                      </image>
                   </ImageView>
                </graphic>
