@@ -1,3 +1,4 @@
+//model for DaysHours scene
 package application.model;
 
 import java.io.File;
@@ -6,6 +7,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class DaysHours {
+	
+	/*
+	* Method Name: toMilityTime
+	* Description: converts time to a double that similar to military time ex: 5:30 -> 17.5
+	* Parameters: time(String)
+	* Returns: time value as double
+	*/
 	public double toMilitaryTime(String time) {
 		int len = time.length();
 		double min = 0;
@@ -100,6 +108,12 @@ public class DaysHours {
 		return -1;
 	}
 	
+	/*
+	* Method Name: saveDaysInfo
+	* Description: switches to Estimate scene 
+	* Parameters: days(ArrayList<String>), startTimes(ArrayList<Double>), endTimes(ArrayList<Double>)
+	* Returns: none
+	*/
 	public void saveDaysInfo(ArrayList<String> days, ArrayList<Double> startTimes, ArrayList<Double>endTimes) throws IOException {
 		
 		int total = startTimes.size();
