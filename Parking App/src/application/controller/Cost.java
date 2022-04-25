@@ -1,4 +1,4 @@
-// controller for cost5.5.fxml scene
+// controller for Cost FXML file
 package application.controller;
 
 import java.io.File;
@@ -13,6 +13,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
