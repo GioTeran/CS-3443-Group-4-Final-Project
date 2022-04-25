@@ -33,6 +33,12 @@ public class EstimateController implements Initializable{
     @FXML
     private Button OkButton;
 
+    /*
+	* Method Name: OkButtonClicked
+	* Description: switches to the costs scene 
+	* Parameters: event(Action Event)
+	* Returns: none
+    */
     @FXML
     void OkButtonClicked(ActionEvent event) throws IOException {
     	URL url = new File("src/Cost.fxml").toURI().toURL();
@@ -43,6 +49,13 @@ public class EstimateController implements Initializable{
         window.show();
 
     }
+	
+    /*
+	* Method Name: BackButtonClicked
+	* Description: switches to the schedule scene 
+	* Parameters: event(Action Event)
+	* Returns: none
+    */
     @FXML
     void BackButtonClicked(ActionEvent event) throws IOException {
     	URL url = new File("src/DaysHours.fxml").toURI().toURL();
@@ -53,6 +66,13 @@ public class EstimateController implements Initializable{
         window.show();
 
     }
+	
+    /*
+   	* Method Name: initialize
+   	* Description: displays permits information
+   	* Parameters: arg0(URL), arg1 (ResourceBundle)
+   	* Returns: none
+    */
     public void initialize(URL arg0, ResourceBundle arg1){
     	InfoField.setText("DON'T FORGET TO PUT INFO ABOUT PERMITS");
     }
