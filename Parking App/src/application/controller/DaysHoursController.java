@@ -122,6 +122,12 @@ public class DaysHoursController {
     ArrayList<Double> endTimes = new ArrayList<>();
     DaysHours daysHours = new DaysHours();
     
+    /*
+	* Method Name: getDaysInfo
+	* Description: gets info for user's schedule and puts it in 
+	* Parameters: none
+	* Returns: none
+    */
     public void getDaysInfo() {
     	if(MoCheckBox.isSelected()) {
     		days.add("Mon");
@@ -213,7 +219,12 @@ public class DaysHoursController {
     }
     
     
-    
+    /*
+	* Method Name: SubmitButtonClicked
+	* Description: switches to Estimate scene 
+	* Parameters: event(Action Event)
+	* Returns: none
+    */
     @FXML
     void SubmitButtonClicked(ActionEvent event) throws IOException {
     	getDaysInfo();
@@ -226,7 +237,12 @@ public class DaysHoursController {
         window.show();
 
     }
-    
+    /*
+	* Method Name: BackButtonClicked
+	* Description: switches to the permit selection scene 
+	* Parameters: event(Action Event)
+	* Returns: none
+    */
     @FXML
     void BackButtonClicked(ActionEvent event) throws IOException {
     	URL url = new File("src/SelectionMenu.fxml").toURI().toURL();
