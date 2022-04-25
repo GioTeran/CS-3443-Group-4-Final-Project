@@ -1,3 +1,4 @@
+//This model class is is used to find final costs of permits
 package application.model;
 
 import java.io.File;
@@ -12,6 +13,13 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class Estimate {
+	/*
+	* Method Name: finalEstimate
+	* Description: reads necessary files in /data and uses info to make estimates
+	* on the best permit for the user based on their input   
+	* Parameters: event(TextArea), list (ListView<String>)
+	* Returns: none
+	*/
 	public void finalEstimate(TextArea textfield, ListView<String> list) throws IOException {
 		File file = new File("src/data/permitSelection.txt");
 		File file2 = new File("src/data/Status.txt");
