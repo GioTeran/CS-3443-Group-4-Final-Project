@@ -229,8 +229,8 @@ public class DaysHoursController {
     void SubmitButtonClicked(ActionEvent event) throws IOException {
     	getDaysInfo();
     	daysHours.saveDaysInfo(days, startTimes, endTimes);
-    	URL url = new File("src/Estimations.fxml").toURI().toURL();
-   	 		TimePane = FXMLLoader.load(url);// pane you are GOING TO
+    	URL url = new File("src/Cost.fxml").toURI().toURL();
+   	TimePane = FXMLLoader.load(url);// pane you are GOING TO
         Scene scene = new Scene(TimePane);// pane you are GOING TO show
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();// pane you are ON
         window.setScene(scene);
