@@ -1,4 +1,19 @@
 # CS-3443-Group-4-Final-Project
+The UTSA Campus Roadrunners Parking Assistance
+Group 4
+Shandra Levy
+Carlos Zambrano
+Giovanni Teran
+Retrouvailles Manishimwe
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Our parking assistance app strives to be able to apply an intuitive user interface 
+that depends on human input about parking in real/periods of time and employ an 
+algorithm to display parking options and calculate the most affordable option. Parking 
+can be very rule intensive at our campus and varies significantly, so employing a 
+software to ease that would increase efficiency dramatically.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Known bugs: sometimes when 24hr checkbox is checked, there is an error
+
 How to clone the git repository 
 
 1) Copy the GitHub URL of the repository to the clipboard
