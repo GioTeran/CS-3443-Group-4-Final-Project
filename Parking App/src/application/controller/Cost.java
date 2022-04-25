@@ -65,7 +65,7 @@ public class Cost implements Initializable{
     }
     @FXML
     void BackButtonClicked(ActionEvent event) throws IOException {
-    	URL url = new File("src/Estimates5.fxml").toURI().toURL();
+    	URL url = new File("src/Estimations.fxml").toURI().toURL();
    	 	CostPane = FXMLLoader.load(url);// pane you are GOING TO
         Scene scene = new Scene(CostPane);// pane you are GOING TO show
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();// pane you are ON
