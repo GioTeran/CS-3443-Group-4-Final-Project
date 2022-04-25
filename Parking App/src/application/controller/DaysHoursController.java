@@ -239,37 +239,30 @@ public class DaysHoursController {
     
     @FXML
     void SunChecked(ActionEvent event) {
-    	Su24hrBox.setSelected(true);
     }
 
     @FXML
     void MonChecked(ActionEvent event) {
-    	Mo24hrBox.setSelected(true);
     }
 
     @FXML
     void TueChecked(ActionEvent event) {
-    	Tu24hrBox.setSelected(true);
     }
 
     @FXML
     void WedChecked(ActionEvent event) {
-    	We24hrBox.setSelected(true);
     }
 
     @FXML
     void ThrChecked(ActionEvent event) {
-    	Th24Box.setSelected(true);
     }
     
     @FXML
     void FriChecked(ActionEvent event) {
-    	Fr24hrBox.setSelected(true);
     }
 
     @FXML
     void SatChecked(ActionEvent event) {
-    	Sa24hrBox.setSelected(true);
     }
 
 
