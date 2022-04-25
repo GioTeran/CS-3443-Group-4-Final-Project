@@ -23,13 +23,13 @@
                   <Font size="51.0" />
                </font>
             </Text>
-            <TextArea fx:id="PermitCost" layoutX="82.0" layoutY="107.0" prefHeight="39.0" prefWidth="246.0" />
+            <TextArea fx:id="PermitCost" layoutX="82.0" layoutY="107.0" prefHeight="125.0" prefWidth="610.0" />
             <Text fill="WHITE" layoutX="89.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Other Permits in your status:">
                <font>
                   <Font size="26.0" />
                </font>
             </Text>
-            <Button layoutX="6.0" layoutY="537.0" mnemonicParsing="false" onAction="#BackButtonClicked" prefHeight="51.0" prefWidth="68.0" style="-fx-background-color: #0C2340;" text="Button">
+            <Button layoutX="-2.0" layoutY="521.0" mnemonicParsing="false" onAction="#BackButtonClicked" prefHeight="51.0" prefWidth="68.0" style="-fx-background-color: #0C2340;" text="Button">
                <graphic>
                   <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                      <image>
